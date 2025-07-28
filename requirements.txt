@@ -1,6 +1,6 @@
-# --extra-index-url https://download.pytorch.org/whl/cu128
-# torch
-# torchaudio
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch
+torchaudio
 transformers
 bitsandbytes
 accelerate
@@ -8,3 +8,4 @@ sounddevice
 numpy
 huggingface_hub
 ipykernel
+soundfile

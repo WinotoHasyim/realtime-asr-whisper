@@ -53,7 +53,10 @@ For part1, it is recommended to try to run it in colab.
 
 * **Model (`openai/whisper-base`)**: i chose the `whisper-base` model because it seemed like a really good and safe choice. its from the whisper family and i've already used it once in my practicum so i knew it would be good at understanding speech. i picked the 'base' size so it would be strong but not too huge for my computer.
 
-* **Optimization (Quantization)**: for optimization i picked Quantization because the idea of making a model smaller and faster is interesting to me. i wanted to see if i could make it more efficient for the real-time part of the test (part 2) and quantization is supposed to reduce memory and make it faster, so it was the perfect thing to try.
+* **Optimization (Quantization)**: for optimization i picked Quantization because the idea of making a model smaller and faster is interesting to me. i wanted to see if i could make it more efficient for the real-time part of the test (part 2) and quantization is supposed to reduce memory and make it faster, so it was the perfect thing to try. Also, from what i searched on youtube and internet, Quantization feels easier
+to do rather than LoRA or ONNX, so i used that technique,
+knowing that i'm very new on this topic and also the time
+frame in which i must do the test and learn relevant topics.
 
 ---
 
