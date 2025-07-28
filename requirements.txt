@@ -9,3 +9,4 @@ numpy
 huggingface_hub
 ipykernel
 soundfile
+ipywidgets
