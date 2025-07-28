@@ -154,6 +154,12 @@ this is super useful because it gives the model a hint about what we're talking 
 * **`sounddevice`**: library i used to get the audio from my microphone. It relies on the PortAudio library so make sure it is installed.
 * **`numpy`**: I used this for all the audio data math, like combining audio chunks and calculating the volume (RMS) for my simple voice activity detection.
 * **`threading` and `queue`**: libraries i used to build the producer-consumer architecture so that audio capture and transcription could happen at the same time without interfering with each other.
-
+* **`bitsandbytes`**: this library makes it possible to run large models more efficiently by using 4-bit quantization. it's what i used to make Whisper lighter and faster in Part 1.
+* **`accelerate`**: helps manage device placement (like CPU/GPU) when running models. transformers uses this under the hood.
+* **`huggingface_hub`**: i used this to push my quantized Whisper model to the Hugging Face model hub in Part 1.
+* **`torchaudio`**: a helper library that works with PyTorch and helps with loading, saving, and transforming audio files.
+* **`ipykernel`**: lets Jupyter Notebooks run properly inside a virtual environment. without this, sometimes we can’t select the right Python interpreter in JupyterLab or VS Code.
+* **`soundfile`**: another audio library used by `torchaudio` or as a fallback to read certain audio formats like `.wav`.
+* **`ipywidgets`**: adds interactive UI elements (like sliders, dropdowns) inside Jupyter notebooks. not strictly required, but useful if you want to make the notebook interactive.
 
 </details>
