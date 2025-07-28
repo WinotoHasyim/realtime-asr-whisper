@@ -145,7 +145,7 @@ the `prompt_context` variable in the code is like the model's **short-term memor
 
 after a sentence is finished and printed with a ✅, the program doesn't just forget it. it saves a cleaned-up version of that sentence (with duplicate words removed and limited in length). when i start talking again, the program sends both the *new* audio and that *previous sentence* to the Whisper model.
 
-this is super useful because it gives the model a hint about what we're talking about. so if i say "My favorite fruit is fried chicken" and then the next sentence is "I like to eat it", the model gets the audio for "I like to eat it" and the context "My favorite fruit is apple". this helps it understand that "it" probably refers to an apple. it just makes the model a little smarter and the transcription more accurate. more context is always good
+this is super useful because it gives the model a hint about what we're talking about. so if i say "My favorite fruit is apple" and then the next sentence is "I like to eat it", the model gets the audio for "I like to eat it" and the context "My favorite fruit is apple". this helps it understand that "it" probably refers to an apple. it just makes the model a little smarter and the transcription more accurate. more context is always good
 
 #### Libraries
 
